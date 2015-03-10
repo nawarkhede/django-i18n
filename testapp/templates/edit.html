@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
+ <body>
+<h3>Welcome to MongoDB</h3>
+<h4>Update Record</h4>
+<form action="/update" method="get" autocomplete="off">
+<table>
+<tr><td>Name</td><td><input type="text" name="name" value="{{data.name}}"></td></tr>
+<tr><td>Address</td><td><input type="text" name="address" value="{{data.address}}"></td></tr>
+<tr><td>&nbsp;</td><td><button type="submit">Save Data</button></td></tr>
+
+</table>
+
+<input type="hidden" name="id" value="{{data.id}}">
+</form>
+ </body>
+</html>
